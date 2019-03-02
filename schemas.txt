@@ -1,0 +1,18 @@
+Customer ( CustomerID, FirstName, LastName)
+PK: (CustomerID)
+
+Inventory (LocationID, ProductID, Quantity, ProductID)
+PK: LocaitonID
+FK: ProductID
+
+Products (ProductID, ProductName, ListPrice)
+PK: ProductID
+
+Orders (SalesOrderID, CustomerID, Status, TotalDue)
+PK: SalesOrderID
+FK: CustomerID
+
+Details (SalesOrderDetailID, SalesOrderID, ProductID, OrderDate, OrderQty)
+PK: SalesOrderDetailID
+FK: SalesOrderID
+FK: ProductID
